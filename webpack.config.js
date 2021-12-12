@@ -18,15 +18,15 @@ module.exports = {
             },
             {
                 test: /\.html$/,
-                user: {
+                use: {
                     loader: 'html-loader'
                 }
             }
         ],
-        plugins: [
-            new HTMLWebpackPlugin({
-                template: './index.html'
-            })
-        ] 
-    }
+    },
+    plugins: [
+        new HTMLWebpackPlugin({
+            template: './index.html'
+        })
+    ] 
 }
